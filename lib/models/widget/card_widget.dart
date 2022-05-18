@@ -16,28 +16,29 @@ class CardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () => showDialog(
-        context: context,
-        builder: (context) => const AlertDialog(
-          title: Text('O botão funciona'),
-        ),
-      ),
-      child: Ink(
+      onTap: () {},
+      splashColor: Colors.red,
+      child: Container(
         width: 170,
-        height: 199,
+        height: 210,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(18),
           color: AppColors.primary,
         ),
         child: Column(children: [
           Padding(
-            padding: const EdgeInsets.all(15),
-            child: Text(
-              cardName,
-              style: TextStyles.titleCard,
+            padding: const EdgeInsets.only(top: 15, left: 15, right: 15),
+            child: Center(
+              child: Text(
+                cardName,
+                style: TextStyles.titleCard,
+              ),
             ),
           ),
-          iconCard!,
+          Padding(
+            padding: const EdgeInsets.all(5),
+            child: iconCard!,
+          ),
         ]),
       ),
     );
