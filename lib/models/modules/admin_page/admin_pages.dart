@@ -57,8 +57,7 @@ class AdminPage extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 30),
-              SizedBox(
-                height: 480,
+              Flexible(
                 child: GridView.count(
                   primary: true,
                   mainAxisSpacing: 9,
