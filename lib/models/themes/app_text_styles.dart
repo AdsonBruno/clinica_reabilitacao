@@ -9,6 +9,12 @@ class TextStyles {
     color: AppColors.heading,
   );
 
+  static final titleWelcomeLogin = GoogleFonts.dmSans(
+    fontSize: 18,
+    fontWeight: FontWeight.w500, //Medium
+    color: AppColors.primary,
+  );
+
   static final titleRegular = GoogleFonts.dmSans(
     fontSize: 18,
     fontWeight: FontWeight.w400,
@@ -25,5 +31,11 @@ class TextStyles {
     fontSize: 15,
     fontWeight: FontWeight.w700,
     color: AppColors.second,
+  );
+
+  static final nameButton = GoogleFonts.dmSans(
+    fontSize: 18,
+    fontWeight: FontWeight.w500,
+    color: AppColors.white,
   );
 }

@@ -66,6 +66,7 @@ flutter:
     - assets/images/addClinic.png
     - assets/images/addProcedure.png
     - assets/images/generateReport.png
+    - assets/images/consultancy.png
 
     - assets/icons/userIcon.png
   #   - images/a_dot_ham.jpeg
