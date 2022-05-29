@@ -99,7 +99,9 @@ class _LoginPageState extends State<LoginPage> {
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             InkWell(
-                              onTap: () {},
+                              onTap: () {
+                                Navigator.pushNamed(context, "/adminPage");
+                              },
                               child: Container(
                                 width: 228,
                                 height: 63,

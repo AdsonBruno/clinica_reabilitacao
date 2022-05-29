@@ -25,7 +25,9 @@ class AdminPage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
                     child: SizedBox(
                       width: 61,
                       height: 61,
