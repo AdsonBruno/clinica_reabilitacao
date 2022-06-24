@@ -27,6 +27,11 @@ class TextStyles {
     color: AppColors.white,
   );
 
+  static final hintText = GoogleFonts.dmSans(
+    fontSize: 15,
+    fontWeight: FontWeight.w500,
+  );
+
   static final subtitleButton = GoogleFonts.dmSans(
     fontSize: 15,
     fontWeight: FontWeight.w700,
