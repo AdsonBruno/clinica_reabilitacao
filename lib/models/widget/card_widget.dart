@@ -8,15 +8,17 @@ class CardWidget extends StatelessWidget {
     Key? key,
     required this.cardName,
     this.iconCard,
+    this.onTap,
   }) : super(key: key);
 
   final String cardName;
   final Image? iconCard;
+  final void Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {},
+      onTap: onTap ?? () {},
       splashColor: Colors.red,
       child: Container(
         width: 170,

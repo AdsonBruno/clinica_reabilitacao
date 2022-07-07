@@ -5,7 +5,9 @@ class AppColors {
   static const second = Color(0xFF157BED);
   static const platinumBlue = Color(0xFF143FE3);
   static const delete = Color(0xFFEF1616);
+  // static const delete = Color(0xFFCD4747);
   static const success = Color(0xFF00DE4C);
+  static const nextButton = Color(0xFF43D128);
   static const alert = Color(0xFFFFDE2D);
   static const maximumAttention = Color(0xFFFA9D1A);
   static const backgroundColor = Color(0xFFF5F5F5);

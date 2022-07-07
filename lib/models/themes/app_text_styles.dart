@@ -43,4 +43,16 @@ class TextStyles {
     fontWeight: FontWeight.w500,
     color: AppColors.white,
   );
+
+  static final stepTitle = GoogleFonts.dmSans(
+    fontSize: 18,
+    fontWeight: FontWeight.w500,
+    color: AppColors.black,
+  );
+
+  static final textBase = GoogleFonts.dmSans(
+    fontSize: 17,
+    fontWeight: FontWeight.w800,
+    color: AppColors.black,
+  );
 }
