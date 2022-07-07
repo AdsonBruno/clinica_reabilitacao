@@ -35,6 +35,9 @@ class AdminPage extends StatelessWidget {
                     CardWidget(
                       cardName: 'Cadastrar Médico',
                       iconCard: Image.asset('assets/images/addDoctor.png'),
+                      onTap: () {
+                        Navigator.pushNamed(context, '/doctorRegistration');
+                      },
                     ),
                     CardWidget(
                       cardName: 'Cadastrar Procedimento',
