@@ -1,7 +1,7 @@
+import 'package:clinica_reabilitacao/models/widget/app_bar_widget.dart';
 import 'package:flutter/material.dart';
 
 import 'package:clinica_reabilitacao/models/themes/app_colors.dart';
-import 'package:clinica_reabilitacao/models/widget/main_bar.dart';
 import 'package:clinica_reabilitacao/models/widget/input_text.dart';
 import 'package:clinica_reabilitacao/models/themes/app_text_styles.dart';
 import 'package:clinica_reabilitacao/models/widget/button_widget.dart';
@@ -39,13 +39,15 @@ class _DoctorRegistrationPageState extends State<DoctorRegistrationPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.backgroundColor,
+      appBar: const AppBarWidget(
+        appBarName: 'Cadastro de médico',
+      ),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.only(top: 10, left: 20, right: 29),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              const MainBarWidget(),
               Theme(
                 data: Theme.of(context).copyWith(
                   colorScheme:

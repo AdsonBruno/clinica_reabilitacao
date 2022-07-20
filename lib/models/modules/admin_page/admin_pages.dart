@@ -1,7 +1,7 @@
+import 'package:clinica_reabilitacao/models/widget/app_bar_widget.dart';
 import 'package:flutter/material.dart';
 
 import 'package:clinica_reabilitacao/models/widget/card_widget.dart';
-import 'package:clinica_reabilitacao/models/widget/main_bar.dart';
 
 class AdminPage extends StatelessWidget {
   const AdminPage({Key? key}) : super(key: key);
@@ -10,6 +10,8 @@ class AdminPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: const AppBarWidget(
+            appBarName: 'Adminstrador da clinica', heightAppBar: 100),
         body: Padding(
           padding: const EdgeInsets.only(
             top: 18,
@@ -19,7 +21,7 @@ class AdminPage extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              const MainBarWidget(),
+              // const MainBarWidget(appBarName: 'Página de administrador'),
               const SizedBox(height: 10),
               Flexible(
                 child: GridView.count(
