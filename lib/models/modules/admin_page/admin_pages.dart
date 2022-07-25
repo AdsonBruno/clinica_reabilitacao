@@ -11,7 +11,8 @@ class AdminPage extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         appBar: const AppBarWidget(
-            appBarName: 'Adminstrador da clinica', heightAppBar: 100),
+          appBarName: 'Adminstrador da clinica',
+        ),
         body: Padding(
           padding: const EdgeInsets.only(
             top: 18,
@@ -33,6 +34,8 @@ class AdminPage extends StatelessWidget {
                     CardWidget(
                       cardName: 'Cadastrar Paciente',
                       iconCard: Image.asset('assets/images/addPatient.png'),
+                      onTap: () => Navigator.pushNamed(
+                          context, '/patientRegistrationPage'),
                     ),
                     CardWidget(
                       cardName: 'Cadastrar Médico',
@@ -49,11 +52,9 @@ class AdminPage extends StatelessWidget {
                       cardName: 'Gerar Relatório',
                       iconCard: Image.asset('assets/images/generateReport.png'),
                     ),
-                    Expanded(
-                      child: CardWidget(
-                        cardName: 'Cadastrar Clinica',
-                        iconCard: Image.asset('assets/images/addClinic.png'),
-                      ),
+                    CardWidget(
+                      cardName: 'Cadastrar Clinica',
+                      iconCard: Image.asset('assets/images/addClinic.png'),
                     ),
                   ],
                 ),
