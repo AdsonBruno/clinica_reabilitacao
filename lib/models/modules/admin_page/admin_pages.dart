@@ -47,6 +47,8 @@ class AdminPage extends StatelessWidget {
                     CardWidget(
                       cardName: 'Cadastrar Procedimento',
                       iconCard: Image.asset('assets/images/addProcedure.png'),
+                      onTap: () => Navigator.pushNamed(
+                          context, '/procedureRegistrationPage'),
                     ),
                     CardWidget(
                       cardName: 'Gerar Relatório',
@@ -55,6 +57,8 @@ class AdminPage extends StatelessWidget {
                     CardWidget(
                       cardName: 'Cadastrar Clinica',
                       iconCard: Image.asset('assets/images/addClinic.png'),
+                      onTap: () => Navigator.pushNamed(
+                          context, '/clinicRegistrationPage'),
                     ),
                   ],
                 ),
