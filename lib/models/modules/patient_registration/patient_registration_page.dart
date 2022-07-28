@@ -1,5 +1,6 @@
 import 'package:clinica_reabilitacao/models/themes/app_colors.dart';
 import 'package:clinica_reabilitacao/models/themes/app_text_styles.dart';
+import 'package:clinica_reabilitacao/models/widget/alert_dialog_widget.dart';
 import 'package:clinica_reabilitacao/models/widget/app_bar_widget.dart';
 import 'package:clinica_reabilitacao/models/widget/button_widget.dart';
 import 'package:clinica_reabilitacao/models/widget/input_text.dart';
@@ -55,7 +56,8 @@ class _PatientRegistrationPageState extends State<PatientRegistrationPage> {
 
                       if (isLastStep) {
                         print('Completed');
-                        showAlertDialog(context);
+                        showAlertDialogWidget(context,
+                            'Dados cadastrados com sucesso. Deseja cadastrar novo paciente?');
                       } else {
                         setState(() {
                           _currentStep += 1;
@@ -236,35 +238,4 @@ class _PatientRegistrationPageState extends State<PatientRegistrationPage> {
           ),
         )
       ];
-
-  showAlertDialog(BuildContext context) {
-    Widget noButton = TextButton(
-      child: const Text('Não'),
-      onPressed: () {
-        Navigator.pushNamed(context, '/adminPage');
-      },
-    );
-    Widget yesButton = TextButton(
-      child: const Text('Sim'),
-      onPressed: () {
-        Navigator.of(context).pop();
-      },
-    );
-
-    AlertDialog alert = AlertDialog(
-      title: const Text('Teste'),
-      content: const Text(
-          'Os dados foram salvos com sucesso. Deseja cadastrar novo usuário?'),
-      actions: [
-        noButton,
-        yesButton,
-      ],
-    );
-
-    showDialog(
-        context: context,
-        builder: (BuildContext context) {
-          return alert;
-        });
-  }
 }

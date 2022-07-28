@@ -1,3 +1,4 @@
+import 'package:clinica_reabilitacao/models/widget/alert_dialog_widget.dart';
 import 'package:clinica_reabilitacao/models/widget/app_bar_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -63,7 +64,9 @@ class _DoctorRegistrationPageState extends State<DoctorRegistrationPage> {
 
                       if (isLastStep) {
                         print('Completed');
-                        showAlertDialog(context);
+                        // showAlertDialog(context);
+                        showAlertDialogWidget(context,
+                            'Dados cadastrados com sucesso. Deseja cadastrar novo funcionário?');
 
                         // send data to server
                       } else {
@@ -300,35 +303,4 @@ class _DoctorRegistrationPageState extends State<DoctorRegistrationPage> {
           ),
         ),
       ];
-
-  showAlertDialog(BuildContext context) {
-    Widget noButton = TextButton(
-      child: const Text('Não'),
-      onPressed: () {
-        Navigator.pushNamed(context, '/adminPage');
-      },
-    );
-    Widget yesButton = TextButton(
-      child: const Text('Sim'),
-      onPressed: () {
-        Navigator.of(context).pop();
-      },
-    );
-
-    AlertDialog alert = AlertDialog(
-      title: const Text('Dialogo de Alerta'),
-      content: const Text(
-          'Os dados foram salvos com sucesso. Deseja cadastrar novo usuário?'),
-      actions: [
-        noButton,
-        yesButton,
-      ],
-    );
-
-    showDialog(
-        context: context,
-        builder: (BuildContext context) {
-          return alert;
-        });
-  }
 }
