@@ -84,6 +84,15 @@ class _DoctorRegistrationPageState extends State<DoctorRegistrationPage> {
                         margin: const EdgeInsets.only(top: 50),
                         child: Row(
                           children: [
+                            if (_currentStep != 0)
+                              Expanded(
+                                child: ButtonWidget(
+                                  nameButton: 'Voltar',
+                                  onPressed: details.onStepCancel,
+                                  colorName: AppColors.delete,
+                                ),
+                              ),
+                            const SizedBox(width: 12),
                             Expanded(
                               child: ButtonWidget(
                                 nameButton:
@@ -94,15 +103,6 @@ class _DoctorRegistrationPageState extends State<DoctorRegistrationPage> {
                                 colorName: AppColors.nextButton,
                               ),
                             ),
-                            const SizedBox(width: 12),
-                            if (_currentStep != 0)
-                              Expanded(
-                                child: ButtonWidget(
-                                  nameButton: 'Voltar',
-                                  onPressed: details.onStepCancel,
-                                  colorName: AppColors.delete,
-                                ),
-                              ),
                           ],
                         ),
                       );
@@ -205,7 +205,9 @@ class _DoctorRegistrationPageState extends State<DoctorRegistrationPage> {
           isActive: _currentStep >= 2,
           title: const Text('Configuração da Conta'),
           content: Column(
+            mainAxisSize: MainAxisSize.min,
             children: [
+              const SizedBox(height: 5),
               InputTextWidget(
                 controller: username,
                 labelText: 'Nome de usuário',

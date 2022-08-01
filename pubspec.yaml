@@ -67,6 +67,7 @@ flutter:
     - assets/images/addProcedure.png
     - assets/images/generateReport.png
     - assets/images/consultancy.png
+    - assets/images/filaDeEspera.png
 
     - assets/icons/userIcon.png
   #   - images/a_dot_ham.jpeg

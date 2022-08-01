@@ -11,6 +11,7 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  TextEditingController userName = TextEditingController();
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -61,10 +62,11 @@ class _LoginPageState extends State<LoginPage> {
                     shrinkWrap: true,
                     children: [
                       Row(
-                        children: const [
+                        children: [
                           Expanded(
                             child: TextField(
-                              decoration: InputDecoration(
+                              controller: userName,
+                              decoration: const InputDecoration(
                                 border: OutlineInputBorder(
                                     borderRadius:
                                         BorderRadius.all(Radius.circular(15))),
@@ -89,6 +91,7 @@ class _LoginPageState extends State<LoginPage> {
                                 ),
                                 labelText: 'Senha',
                               ),
+                              obscureText: true,
                             ),
                           ),
                         ],
@@ -100,7 +103,13 @@ class _LoginPageState extends State<LoginPage> {
                           children: [
                             InkWell(
                               onTap: () {
-                                Navigator.pushNamed(context, '/adminPage');
+                                print(userName);
+                                if (userName.text == 'admin') {
+                                  Navigator.pushNamed(context, '/adminPage');
+                                } else {
+                                  Navigator.pushNamed(
+                                      context, '/doctorMainScreen');
+                                }
                               },
                               child: Container(
                                 width: 228,
