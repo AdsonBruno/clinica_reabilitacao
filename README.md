@@ -18,26 +18,16 @@
 > google_fonts: ^2.3.2
 
 ## Login
-<p align="center">
-    <img align="center" alt="login" src="screenshots/login.png" width="500" height="250"/>
-</p>
+![](/screenshots/login.png)
 
 ## Página do administrador da clínica 
-<p align="center">
-    <img align="center" alt="admin_page" src="screenshots/admin_page.png" width="500" height="250"/>
-</p>
+![](/screenshots/admin.png)
 
 ## Cadastro de paciente
-<p align="center">
-    <img align="center" alt="login" src="screenshots/patient_registration.png" width="500" height="250"/>
-</p>
+![](/screenshots/patient_registration.png)
 
-## Caixa de dialogo 
-<p align="center">
-    <img align="center" alt="login" src="screenshots/alert_dialog.png" width="500" height="250"/>
-</p>
+## Caixa de dialogo
+![](/screenshots/alert_dialog.png)
 
 ## Página do médico
-<p align="center">
-    <img align="center" alt="login" src="screenshots/medic_page.png" width="500" height="250"/>
-</p>
+![](/screenshots/medic_page.png)
