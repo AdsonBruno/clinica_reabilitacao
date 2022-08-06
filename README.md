@@ -1,16 +1,43 @@
-# clinica_reabilitacao
+# Atividade Curricular de Extensão (ACE) - Clinica de fisioterapia
 
-A new Flutter project.
+## Sobre o projeto
+> Este projeto foi proposto pela disciplina de Atividade Curricular de Extensão, ACE, da Universidade Federal de Alagoas – UFAL. Esta ACE tinha o objetivo de mostrar as etapas do processo de desenvolvimento de software, do levantamento de requisitos a codificação do projeto.
+> A proposta era fazer um app para uma clínica de fisioterapia, então, tivemos contato com o responsável da clinica e assim foi feito o levantamento de requisitos e todas as etapas necessárias. 
 
-## Getting Started
+### Etapas
+> 1 – Levantamento de requisitos;
+> 2 – Prototipação das telas baseada no levantamento de requisitos, utilizei o figma;
+> 3 – Aprovação por parte do cliente;
+> 4 – codificação;
 
-This project is a starting point for a Flutter application.
+## Tecnologias 
+> Dart 2.17.1
+> Flutter 3.0.1
 
-A few resources to get you started if this is your first Flutter project:
+### Pacote utilizado
+> google_fonts: ^2.3.2
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Login
+<p align="center">
+    <img align="center" alt="login" src="sccreenshots/login.png" width="500" height="250"/>
+</p>
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Página do administrador da clínica 
+<p align="center">
+    <img align="center" alt="admin_page" src="sccreenshots/admin_page.png" width="500" height="250"/>
+</p>
+
+## Cadastro de paciente
+<p align="center">
+    <img align="center" alt="login" src="sccreenshots/patient_registration.png" width="500" height="250"/>
+</p>
+
+## Caixa de dialogo 
+<p align="center">
+    <img align="center" alt="login" src="sccreenshots/alert_dialog.png" width="500" height="250"/>
+</p>
+
+## Página do médico
+<p align="center">
+    <img align="center" alt="login" src="sccreenshots/medic_page.png" width="500" height="250"/>
+</p>
