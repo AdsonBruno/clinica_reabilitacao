@@ -20,8 +20,13 @@
 ## Login
 ![](/screenshots/login.png)
 
+
 ## Página do administrador da clínica 
 ![](/screenshots/admin.png)
+
+<div> 
+  <img align="center" src="./screenshots/admin_page.png" width="300px" height="600px">
+</div>
 
 ## Cadastro de paciente
 ![](/screenshots/patient_registration.png)
